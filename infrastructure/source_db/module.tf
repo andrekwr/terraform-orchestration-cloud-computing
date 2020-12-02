@@ -7,9 +7,12 @@ terraform {
   }
 }
 
-# Configure module based on region.
+# Configure module based on region and account keys.
 provider "aws" {
   region = var.region
+
+  access_key = var.access_key
+  secret_key = var.secret_key
 }
 
 # Get availability zones.

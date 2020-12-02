@@ -8,6 +8,9 @@ setup(
     entry_points= '''
     [console_scripts]
     hello=endpoints:hello
+    signup=endpoints:SignUp
+    login=endpoints:Login
+    refreshtoken=endpoints:RefreshToken
     gettasks=endpoints:GetAllTasks
     gettask=endpoints:GetOneTask
     createtask=endpoints:CreateATask
